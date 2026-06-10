@@ -1,18 +1,20 @@
-# Linear Regression on California Housing Dataset
+# Ridge and Lasso Regression Project
 
 ## Project Overview
 
-This project demonstrates the implementation of a Linear Regression model using Python and Scikit-Learn to predict housing prices based on various features from the California Housing dataset.
+This project demonstrates the implementation of Ridge Regression and Lasso Regression using Scikit-Learn on the California Housing Dataset.
 
-The project covers the complete machine learning workflow, including data preprocessing, feature scaling, train-test splitting, model training, cross-validation, prediction, and performance evaluation.
+The objective is to improve the performance of traditional Linear Regression through Regularization techniques and compare the effectiveness of Ridge and Lasso models.
 
-## Objectives
+## What I Learned
 
-* Understand the fundamentals of Linear Regression.
-* Learn how to preprocess real-world datasets.
-* Implement feature scaling using StandardScaler.
-* Train and evaluate a regression model.
-* Visualize model performance and prediction errors.
+* Regularization in Machine Learning
+* Ridge Regression (L2 Regularization)
+* Lasso Regression (L1 Regularization)
+* Hyperparameter Tuning using GridSearchCV
+* Cross Validation
+* Model Evaluation and Comparison
+* Feature Scaling using StandardScaler
 
 ## Technologies Used
 
@@ -24,55 +26,67 @@ The project covers the complete machine learning workflow, including data prepro
 * Scikit-Learn
 * Jupyter Notebook
 
-## Machine Learning Workflow
+## Dataset
 
-1. Data Collection
+California Housing Dataset provided by Scikit-Learn.
+
+### Features
+
+* Median Income
+* House Age
+* Average Rooms
+* Average Bedrooms
+* Population
+* Average Occupancy
+* Latitude
+* Longitude
+
+### Target
+
+Median House Value
+
+## Project Workflow
+
+1. Data Loading
 2. Data Exploration
-3. Feature Selection
-4. Train-Test Split
-5. Data Standardization
-6. Model Training
-7. Cross Validation
-8. Prediction
+3. Train-Test Split
+4. Feature Scaling
+5. Ridge Regression
+6. Lasso Regression
+7. Hyperparameter Tuning with GridSearchCV
+8. Cross Validation
 9. Model Evaluation
-10. Visualization
+10. Performance Comparison
 
 ## Evaluation Metrics
 
-The model was evaluated using:
+The models were evaluated using:
 
 * R² Score
-* Mean Absolute Error (MAE)
 * Mean Squared Error (MSE)
+* Mean Absolute Error (MAE)
 * Cross Validation Score
 
-## Visualizations
+## Key Concepts
 
-* Actual vs Predicted Values
-* Residual Distribution Plot
-* Error Analysis
+### Ridge Regression
 
-## Learning Outcomes
+Ridge Regression adds an L2 penalty term to the loss function and helps reduce overfitting by shrinking coefficient values.
 
-Through this project, I gained practical experience with:
+### Lasso Regression
 
-* Data preprocessing techniques
-* Feature scaling
-* Regression modeling
-* Model evaluation
-* Data visualization
-* Scikit-Learn workflows
+Lasso Regression adds an L1 penalty term and can perform automatic feature selection by reducing some coefficients to zero.
 
 ## Future Improvements
 
-* Ridge Regression
-* Lasso Regression
+* Elastic Net Regression
+* Polynomial Regression
 * Feature Engineering
-* Hyperparameter Tuning
-* Advanced Regression Models
+* Hyperparameter Optimization
+* Ensemble Learning Models
 
 ## Author
 
 Shrivatsa Khandare
 
-Aspiring AI/ML Engineer | Python Enthusiast | Engineering Student
+Aspiring AI/ML Engineer | Python Developer | Machine Learning Enthusiast
